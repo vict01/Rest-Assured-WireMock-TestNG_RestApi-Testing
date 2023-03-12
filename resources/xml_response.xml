@@ -1,0 +1,22 @@
+<current>
+    <city id="2643743" name="London">
+        <coord lon="-0.1257" lat="51.5085"/>
+        <country>GB</country>
+        <timezone>0</timezone>
+        <sun rise="2023-01-30T07:42:27" set="2023-01-30T16:44:50"/>
+    </city>
+    <temperature value="276.14" min="273.28" max="278.12" unit="kelvin"/>
+    <feels_like value="273.17" unit="kelvin"/>
+    <humidity value="86" unit="%"/>
+    <pressure value="1028" unit="hPa"/>
+    <wind>
+        <speed value="3.09" unit="m/s" name="Light breeze"/>
+        <gusts/>
+        <direction value="230" code="SW" name="Southwest"/>
+    </wind>
+    <clouds value="8" name="clear sky"/>
+    <visibility value="10000"/>
+    <precipitation mode="no"/>
+    <weather number="800" value="clear sky" icon="01n"/>
+    <lastupdate value="2023-01-30T22:46:56"/>
+</current>

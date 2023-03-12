@@ -1,0 +1,63 @@
+        <!ELEMENT current (city|temperature|feels_like|humidity|pressure|wind|clouds|visibility|precipitation|weather|lastupdate)*>
+        <!ELEMENT city (coord|country|timezone|sun)*>
+        <!ATTLIST city
+                id CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT coord (#PCDATA)>
+        <!ATTLIST coord
+                lon CDATA #REQUIRED
+                lat CDATA #REQUIRED>
+        <!ELEMENT country (#PCDATA)>
+        <!ELEMENT timezone (#PCDATA)>
+        <!ELEMENT sun (#PCDATA)>
+        <!ATTLIST sun
+                rise CDATA #REQUIRED
+                set CDATA #REQUIRED>
+        <!ELEMENT temperature (#PCDATA)>
+        <!ATTLIST temperature
+                value CDATA #REQUIRED
+                min CDATA #REQUIRED
+                max CDATA #REQUIRED
+                unit CDATA #REQUIRED>
+        <!ELEMENT feels_like (#PCDATA)>
+        <!ATTLIST feels_like
+                value CDATA #REQUIRED
+                unit CDATA #REQUIRED>
+        <!ELEMENT humidity (#PCDATA)>
+        <!ATTLIST humidity
+                value CDATA #REQUIRED
+                unit CDATA #REQUIRED>
+        <!ELEMENT pressure (#PCDATA)>
+        <!ATTLIST pressure
+                value CDATA #REQUIRED
+                unit CDATA #REQUIRED>
+        <!ELEMENT wind (speed|gusts|direction)*>
+        <!ELEMENT speed (#PCDATA)>
+        <!ATTLIST speed
+                value CDATA #REQUIRED
+                unit CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT gusts (#PCDATA)>
+        <!ELEMENT direction (#PCDATA)>
+        <!ATTLIST direction
+                value CDATA #REQUIRED
+                code CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT clouds (#PCDATA)>
+        <!ATTLIST clouds
+                value CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT visibility (#PCDATA)>
+        <!ATTLIST visibility
+                value CDATA #REQUIRED>
+        <!ELEMENT precipitation (#PCDATA)>
+        <!ATTLIST precipitation
+                mode CDATA #REQUIRED>
+        <!ELEMENT weather (#PCDATA)>
+        <!ATTLIST weather
+                number CDATA #REQUIRED
+                value CDATA #REQUIRED
+                icon CDATA #REQUIRED>
+        <!ELEMENT lastupdate (#PCDATA)>
+        <!ATTLIST lastupdate
+                value CDATA #REQUIRED>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test suite 2" verbose="10">
+    <test name="Package-based test execution">
+
+        <groups>
+            <!-- Include or exclude according the used groups tags that are used per tests, if any -->
+            <!-- The use of groups depends on the use of class or package afterward, otherwise no test will run -->
+            <run>
+<!--            <include name="basicAuth"/> -->
+            </run>
+        </groups>
+
+        <packages>
+            <!-- With .* we indicate all packages will be executed -->
+<!--            <package name=".*" />   -->
+
+            <!-- Below we can indicate one or more specific packages, taking into account that only the specified in include group above will run -->
+            <package name="WireMock" />
+<!--            <package name="org.example" /> -->
+        </packages>
+
+    </test>
+</suite>

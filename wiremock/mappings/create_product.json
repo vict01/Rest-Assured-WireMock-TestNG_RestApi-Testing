@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/createProduct"
+    },
+    "response":{
+        "status": 201,
+       "bodyFileName": "createProductResponse.json",
+        "headers":{
+            "content-type": "application/json"
+        }
+    }
+}

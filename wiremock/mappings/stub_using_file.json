@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/send-me-file"
+    },
+    "response":{
+        "status": 200,
+        "bodyFileName": "xmlFile.xml",
+        "headers":{
+            "content-type": "application/xml"
+        }
+    }
+}

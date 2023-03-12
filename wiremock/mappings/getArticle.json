@@ -1,0 +1,20 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/get-article/testng"
+    },
+    "response":{
+        "status": 200,
+        "headers":{
+            "content-type": "application/json"
+        },
+        "jsonBody":{
+            "articleName": "How to work with multiple-testng-xml-files",
+            "metaCode": "Multiple testng-xml",
+            "href": "https://medium.com/",
+            "articleId": "@iamfaisalkhatri/working-with-multiple-testng-xml-files-f5c36896d6b6",
+            "articleUrl": "https://medium.com/@iamfaisalkhatri/working-with-multiple-testng-xml-files-f5c36896d6b6"
+        },
+        "statusMessage": "Everything went well!"
+    }
+}

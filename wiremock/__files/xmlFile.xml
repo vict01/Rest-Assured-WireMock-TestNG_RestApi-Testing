@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is for testing purposes -->>
+<?xml-stylesheet type="text/xsl" href="xslplanet.1.xsl"?>
+
+<car>
+  <brand>Mercedes Benz</brand>
+  <model>GLC</model>
+  <color>Red</color>
+  <year>2023</year>
+</car>

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "status",
+    "data",
+    "message"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "default": "",
+      "title": "The status Schema",
+      "examples": [
+        "success"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "id",
+        "employee_name",
+        "employee_salary",
+        "employee_age",
+        "profile_image"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "default": 0,
+          "title": "The id Schema",
+          "examples": [
+            1
+          ]
+        },
+        "employee_name": {
+          "type": "string",
+          "default": "",
+          "title": "The employee_name Schema",
+          "examples": [
+            "Tiger Nixon"
+          ]
+        },
+        "employee_salary": {
+          "type": "integer",
+          "default": 0,
+          "title": "The employee_salary Schema",
+          "examples": [
+            320800
+          ]
+        },
+        "employee_age": {
+          "type": "integer",
+          "default": 0,
+          "title": "The employee_age Schema",
+          "examples": [
+            61
+          ]
+        },
+        "profile_image": {
+          "type": "string",
+          "default": "",
+          "title": "The profile_image Schema",
+          "examples": [
+            ""
+          ]
+        }
+      },
+      "examples": [
+        {
+          "id": 1,
+          "employee_name": "Tiger Nixon",
+          "employee_salary": 320800,
+          "employee_age": 61,
+          "profile_image": ""
+        }
+      ]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "Successfully! Record has been fetched."
+      ]
+    }
+  },
+  "examples": [
+    {
+      "status": "success",
+      "data": {
+        "id": 1,
+        "employee_name": "Tiger Nixon",
+        "employee_salary": 320800,
+        "employee_age": 61,
+        "profile_image": ""
+      },
+      "message": "Successfully! Record has been fetched."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite 1" verbose="10">
+    <test name="Class-based test execution">
+        <groups>
+            <!-- Include or exclude according the used groups tags that are used per tests, if any -->
+            <!-- The use of groups depends on the use of class or package afterward, otherwise no test will run -->
+            <run>
+                <exclude name="flaky"/>
+                <exclude name="requiredAuth"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- Below include a list of package.class names which you want to run -->
+            <class name="org.example.GetMethodTest"/>
+            <class name="org.example.HeadersAndCookies"/>
+            <class name="org.example.LogTest"/>
+            <class name="org.example.PostPutDeleteMethodTest"/>
+            <class name="org.example.RequestParameters"/>
+            <class name="org.example.WorkingWithList"/>
+
+            <!-- This way below, we can indicate that we want to run a specific test from a specific class -->
+            <class name="org.example.AuthTest">
+                <methods>
+                    <include name="digest_authentication" />
+                </methods>
+            </class>
+
+            <class name="org.example.SchemaValidation">
+                <methods>
+                    <include name="verifyJsonSchema" />
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

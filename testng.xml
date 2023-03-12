@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Call of all xml files">
+    <suite-files>
+        <!-- Include below all the xml config files that you want to call -->
+        <suite-file path="testng_selected_classes.xml"/>
+        <suite-file path="testng_selected_packages.xml"/>
+    </suite-files>
+</suite>

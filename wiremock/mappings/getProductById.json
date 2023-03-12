@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/product/28"
+    },
+    "response":{
+        "status": 200,
+        "headers":{
+            "content-type": "application/json"
+        },
+        "jsonBody": {
+            "type": "laptop",
+            "model": "McBook 123",
+            "year": 2020,
+            "colors": ["black", "white", "gray", "blue"]
+        },
+        "statusMessage": "Everything was just fine!"        
+    }
+}
