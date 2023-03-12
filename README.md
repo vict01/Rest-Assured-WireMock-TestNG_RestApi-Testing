@@ -23,7 +23,7 @@ The main folders of this project are:
 * src/test/java/org/example: Contains tests corresponding to test APIs, independent of wiremock.
 * src/test/java/WireMock: Contains tests corresponding to wiremock APIs.
 * wiremock: Contains the resources to run the mock API service.
->the purposes and contents of the other folders and files, are explained by their own names
+>The purposes and contents of the other folders and files, are explained by their own names
 
 ## Instructions to run the tests:
 ### To start the WireMock service:
