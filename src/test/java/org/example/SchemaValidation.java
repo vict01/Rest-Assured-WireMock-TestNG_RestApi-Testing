@@ -11,6 +11,9 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 public class SchemaValidation {
 
+    // To use https://api.openweathermap.org you need to go there and create an account so that to get the AppId
+    String openWeatherApiAppId = "";
+
     @Test(groups = {"schemeValidation"} )
     public void verifyJsonSchema() {
         File file = new File("resources/json_schema_emp_by_id.json.json");
@@ -35,7 +38,7 @@ public class SchemaValidation {
 
         given()
                 .baseUri("https://api.openweathermap.org/data/2.5")
-                .queryParam("APPID","2b5760d5880c3cbdcb0647b92d5bf2f1")
+                .queryParam("APPID",openWeatherApiAppId)
                 .queryParam("q", "London,uk")
                 .queryParam("mode","xml")
         .when()
@@ -53,7 +56,7 @@ public class SchemaValidation {
 
         given()
                 .baseUri("https://api.openweathermap.org/data/2.5")
-                .queryParam("APPID", "2b5760d5880c3cbdcb0647b92d5bf2f1")
+                .queryParam("APPID", openWeatherApiAppId)
                 .queryParam("q", "London,uk")
                 .queryParam("mode", "xml").
         when()
